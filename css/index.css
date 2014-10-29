@@ -1,0 +1,98 @@
+body {
+  background: url("../images/ucl_quad.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+div.sign-up {
+  margin: 2em;
+  display: block;
+  width: 35em;
+  padding: 2em;
+  background: #000;
+  border-radius: 10px;
+  opacity: 0.90;
+  margin: 5em auto;
+  overflow: hidden;
+}
+
+div.sign-up h1, div.sign-up h2 {
+  color: white;
+  opacity: 1;
+}
+
+div.sign-up span.alert {
+  display: block;
+  width: 20em;
+}
+
+div.sign-up span.error {
+  display: block;
+  border: red;
+  background: red;
+  text: white;
+}
+
+div.sign-up form label {
+  color: white;
+  opacity: 1;
+  width: 5.5em;
+  height: 2.5em;
+  margin-right: 2em;
+  font-size: 1.2em;
+  float: left;
+  clear: left;
+}
+
+@keyframes blink {
+  0% {border: 0.35em solid #4169E1;}
+  100% {border: 0.35em solid #000080;}
+}
+
+div.sign-up form input[type=text] {
+  width: 20em;
+  height: 2.5em;
+  margin: 0.25em;
+  border: 0.35em solid #c4c4c4;
+  border-radius: 5px;
+  outline: none;
+  padding: 0.35em;
+  float: right;
+}
+
+div.sign-up form input[type=text]:focus {
+  width: 20em;
+  height: 2.5em;
+  margin: 0.25em;
+  outline: none;
+  border-radius: 5px;
+  padding: 0.35em;
+  border: 0.35em solid #000066;
+  float: right;
+  animation: blink 0.9s ease-in-out 0s infinite;
+}
+
+div.sign-up form input[type=submit] {
+  float: left;
+  clear: left;
+  opacity: 1;
+}
+
+
+.input-error {
+  border: solid 0.25em #990000;
+  background: #ff0000;
+  display: inline-block;
+  padding: 0.25em 0.25em 0.25em 0.35em;
+  color: #fff;
+}
+
+.input-success {
+  border: solid 0.25em #003300;
+  background: #00cc00;
+  display: inline-block;
+  padding: 0.25em 0.25em 0.25em 0.35em;
+  color: #fff;
+}
